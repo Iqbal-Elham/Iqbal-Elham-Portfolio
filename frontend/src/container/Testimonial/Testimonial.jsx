@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
+import { BsBoxArrowUpRight } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import AppWrap from '../../wrapper/AppWrap';
 import MotionWrap from '../../wrapper/MotionWrap';
@@ -37,7 +38,9 @@ const Testimonial = () => {
             <div className="app__testimonial-content">
               <p className="p-text">{testimonials[currentIndex].feedback}</p>
               <div>
-                <h4 className="bold-text">{testimonials[currentIndex].name}</h4>
+                <a href={testimonials[currentIndex].link} target="_blank" >
+                  <h4 className="bold-text">{testimonials[currentIndex].name} <BsBoxArrowUpRight /></h4>
+                  </a>
                 <h5 className="p-text">{testimonials[currentIndex].company}</h5>
               </div>
             </div>
