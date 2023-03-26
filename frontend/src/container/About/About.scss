@@ -12,6 +12,19 @@
     margin-top: 2rem;
 }
 
+.about__me {
+    margin-top: 1.5rem;
+    font-size: 20px;
+    width: 50%;
+    color: var(--black-color);
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
 .app__profile-item {
     width: 190px;
     display: flex;
