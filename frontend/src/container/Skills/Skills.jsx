@@ -7,6 +7,7 @@ import MotionWrap from '../../wrapper/MotionWrap';
 import { urlFor, client } from '../../client';
 import './Skills.scss';
 
+
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
@@ -48,10 +49,10 @@ const Skills = () => {
           ))}
         </motion.div>
         <div className="app__skills-exp">
-          {experiences.map((experience, index) => (
+          {experiences.map((experience) => (
             <motion.div
               className="app__skills-exp-item"
-              key={index}
+              key={experience.year}
             >
               <div className="app__skills-exp-year">
                 <p className="bold-text">{experience.year}</p>

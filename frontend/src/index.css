@@ -12,9 +12,19 @@
   --white-color: #ffffff;
 }
 
+[data-theme="dark"] {
+  --primary-color: #181919;
+  --black-color: #ffffffd7;
+  --gray-color: #e4e4e4;
+  --white-color: #030303;
+  --lightGray-color: #6b7688;
+  --brown-color: #46364a;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  transition: all 0.3s ease-in-out;
 }

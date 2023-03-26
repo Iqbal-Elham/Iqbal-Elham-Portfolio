@@ -7,6 +7,8 @@ import Skills from './container/Skills/Skills';
 import Testimonial from './container/Testimonial/Testimonial';
 import Work from './container/Work/Work';
 import Navbar from './components/Navbar/Navbar';
+import DarkMode from './components/DarkMode/DarkMode';
+
 
 function App() {
   return (
