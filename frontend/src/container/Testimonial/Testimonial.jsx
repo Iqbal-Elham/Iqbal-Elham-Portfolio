@@ -31,6 +31,11 @@ const Testimonial = () => {
 
   return (
     <>
+     <h2 className="head-text">
+        What my 
+        <span> Colleagues </span>
+        say
+      </h2>
       {testimonials.length && (
         <>
           <div className="app__testimonial-item app__flex">
@@ -38,7 +43,7 @@ const Testimonial = () => {
             <div className="app__testimonial-content">
               <p className="p-text">{testimonials[currentIndex].feedback}</p>
               <div>
-                <a href={testimonials[currentIndex].link} target="_blank" >
+                <a href={testimonials[currentIndex].link} target="_blank" rel="noopener noreferrer" >
                   <h4 className="bold-text">{testimonials[currentIndex].name} <BsBoxArrowUpRight /></h4>
                   </a>
                 <h5 className="p-text">{testimonials[currentIndex].company}</h5>

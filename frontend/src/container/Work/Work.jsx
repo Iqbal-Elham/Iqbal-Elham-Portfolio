@@ -7,7 +7,6 @@ import { urlFor, client } from "../../client";
 import "./Work.scss";
 
 const Work = () => {
-  const items = ["UI/UX", "Web App", "Mobile App", "React JS", "All"];
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState("All");

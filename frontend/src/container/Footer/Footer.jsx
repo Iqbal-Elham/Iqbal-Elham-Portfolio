@@ -3,7 +3,7 @@ import { images } from "../../constants";
 import AppWrap from "../../wrapper/AppWrap";
 import MotionWrap from "../../wrapper/MotionWrap";
 import { client } from "../../client";
-import { BsInstagram, BsGithub } from "react-icons/bs";
+import { BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import "./Footer.scss";
 
@@ -50,13 +50,13 @@ const Footer = () => {
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
           <a href="mailto:iqbal.elham7@gmail.com" className="p-text">
-          iqbal.elham7@gmail.com
+            iqbal.elham7@gmail.com
           </a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
           <a href="tel:+93 (765) 181-256" className="p-text">
-          +93 (765) 181-256
+            +93 (765) 181-256
           </a>
         </div>
       </div>
@@ -103,13 +103,40 @@ const Footer = () => {
       <div className="footer__footer">
         <div className="app__social-icons">
           <div>
-            <BsGithub />
+            <a
+              href="https://github.com/Iqbal-Elham"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsGithub />
+            </a>
           </div>
           <div>
-            <BsInstagram />
+            <a
+              href="https://www.linkedin.com/in/iqbal-elham/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsLinkedin />
+            </a>
           </div>
           <div>
-            <FaFacebookF />
+            <a
+              href="https://www.facebook.com/iqbal.elh/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.instagram.com/iqbal_elham/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsInstagram />
+            </a>
           </div>
         </div>
         <div className="footer__copyright">

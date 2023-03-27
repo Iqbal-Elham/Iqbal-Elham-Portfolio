@@ -26,6 +26,23 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  transition: all 0.3s ease-in-out;
   text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgb(110, 109, 109);
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #c52d28; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b1201b; 
 }

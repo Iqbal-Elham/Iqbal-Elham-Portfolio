@@ -35,7 +35,7 @@ const Header = () => {
             <p className="p-text">Full Stack Web Developer</p>
             <p className="p-text">Freelancer</p>
           </div>
-          <a href={ resume } target="_blank">
+          <a href={ resume } target="_blank" rel="noopener noreferrer" >
             <button className="app__resume">My Resume</button>
           </a>
         </div>
