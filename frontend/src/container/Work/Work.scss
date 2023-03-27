@@ -50,7 +50,7 @@
         margin: 2rem;
         padding: 1rem;
         border-radius: 0.5rem;
-        background-color: #fff;
+        background-color: var(--white-color);
         color: #000;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -136,7 +136,7 @@
         position: absolute;
         padding: 0.5rem 1rem;
         border-radius: 10px;
-        background-color: #fff;
+        background-color: var(--white-color);
         top: -25px;
     }
 

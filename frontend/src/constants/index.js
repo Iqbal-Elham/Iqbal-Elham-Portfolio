@@ -1,3 +1,3 @@
 import images from './images';
-
-export { images };
+import resume from '../assets/Mohammad_Iqbal_CV.pdf'
+export { images, resume };

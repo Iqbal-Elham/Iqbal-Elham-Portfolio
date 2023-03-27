@@ -4,7 +4,7 @@
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
-
+  
   .app_wrapper {
     padding: 0;
 
@@ -12,6 +12,11 @@
       display: none;
     }
   }
+}
+
+[data-theme="dark"] #Home {
+  background: url("../../assets/bgIMGDark.png");
+  background-size: cover;
 }
 
 .app__header {
@@ -72,6 +77,8 @@
       width: 100%;
       text-transform: uppercase;
       text-align: right;
+      font-size: 16px;
+
     }
   }
 
@@ -82,6 +89,26 @@
       font-size: 5rem;
     }
   }
+
+  .app__resume {
+    margin-top: 2rem;
+    margin-right: 1rem;
+    background-color: var(--secondary-color);
+    padding: 0.8rem 1.4rem;
+    border-radius: 10px;
+    font-size: 14px;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #9e211d;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 17px;
+    }
+  }
+
   @media screen and (max-width: 1200px) {
     justify-content: flex-start;
     align-items: flex-start;
