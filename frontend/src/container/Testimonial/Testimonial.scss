@@ -58,13 +58,15 @@
       line-height: 1.5rem;
       color: var(--black-color);
       font-family: var(--font-base);
-  
+    
       @media screen and (min-width: 2000px) {
         font-size: 16px;
         line-height: 3rem;
       }
+
+      
     }
-  
+    
     h4 {
       font-weight: 600;
       color: var(--secondary-color);

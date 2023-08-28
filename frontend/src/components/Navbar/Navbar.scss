@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Dancing+Script&family=Fira+Code:wght@400;500;600&family=Fira+Mono:wght@400;500;700&family=Lobster&family=Pacifico&family=Tilt+Prism&display=swap');
+
 .app__navbar {
   width: 100%;
   display: flex;
@@ -18,14 +20,37 @@
   align-items: center;
 
   img {
-    width: 135px;
-    height: 45px;
+    width: 45px;
+    height: 43px;
 
     @media screen and (min-width: 2000px) {
-      width: 230px;
+      width: 80px;
       height: 50px;
     }
   }
+
+  .app__navbar-logo-name {
+    margin-top: 3px;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--black-color);
+    margin-left: 0.3rem;
+    
+    .app__navbar-logo-lastname {
+      color: var(--secondary-color);
+    }
+
+    @media screen and (min-width: 2000px) {
+      font-size: 2rem;
+    }
+  }
+
 }
 
 .app__navbar-links {

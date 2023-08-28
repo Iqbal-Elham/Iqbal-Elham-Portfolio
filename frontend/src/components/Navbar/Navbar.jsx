@@ -16,10 +16,15 @@ const Navbar = () => {
     "Testimonials",
     "Contact",
   ];
+
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+        <img src={images.logo} alt="logo" className="logo-img" />
+        <div className="app__navbar-logo-name">
+          <p className="app__navbar-logo-firstname">Iqbal</p>
+          <p className="app__navbar-logo-lastname">Elham</p>
+        </div>
       </div>
       <ul className="app__navbar-links">
         {navItems.map((item) => (
@@ -38,6 +43,9 @@ const Navbar = () => {
 
           {toggle && (
             <motion.div
+              initial={{ opacity: 0 }} // Initial opacity when entering
+              animate={{ opacity: 1 }} // Animation when component is present
+              exit={{ opacity: 0 }}    // Animation when component is removed
               whileInView={{ x: [300, 0] }}
               transition={{ duration: 0.85, ease: "easeInOut" }}
             >
