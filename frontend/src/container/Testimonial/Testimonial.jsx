@@ -11,9 +11,19 @@ const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [testimonials, setTestimonials] = useState([]);
   const [brands, setBrands] = useState([]);
+  const [expanded, setExpanded] = useState(false);
 
   const handleClick = (index) => {
     setCurrentIndex(index);
+    setExpanded(false); // reset expanded state
+  };
+
+  const toggleExpanded = () => {
+    setExpanded(!expanded);
+  };
+
+  const truncateText = (text, maxLength) => {
+    return text.length > maxLength ? text.substring(0, maxLength) + '...' : text;
   };
 
   useEffect(() => {
@@ -41,7 +51,10 @@ const Testimonial = () => {
           <div className="app__testimonial-item app__flex">
             <img src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials[currentIndex].name} />
             <div className="app__testimonial-content">
-              <p className="p-text">{testimonials[currentIndex].feedback}</p>
+              <p className="p-text">{expanded ? testimonials[currentIndex].feedback : truncateText(testimonials[currentIndex].feedback, 300)}</p>
+              <button className="see-more-button" onClick={toggleExpanded}>
+              {expanded ? 'See less' : 'See more'}
+            </button>
               <div>
                 <a href={testimonials[currentIndex].link} target="_blank" rel="noopener noreferrer" >
                   <h4 className="bold-text">{testimonials[currentIndex].name} <BsBoxArrowUpRight /></h4>

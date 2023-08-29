@@ -6,12 +6,12 @@ import "./DarkMode.css";
 
 const DarkMode = () => {
   const setDarkMode = () => {
-    document.querySelector("body").setAttribute("data-theme", "dark");
+    document.querySelector("html").setAttribute("data-theme", "dark");
     localStorage.setItem("selectedTheme", "dark");
     document.querySelector(".logo-img").src = images.lightLogo;
   };
   const setLightMode = () => {
-    document.querySelector("body").setAttribute("data-theme", "light");
+    document.querySelector("html").setAttribute("data-theme", "light");
     localStorage.setItem("selectedTheme", "light");
     document.querySelector(".logo-img").src = images.logo;
 
