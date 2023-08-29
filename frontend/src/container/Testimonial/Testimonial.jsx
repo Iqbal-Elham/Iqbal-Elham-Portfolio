@@ -41,7 +41,7 @@ const Testimonial = () => {
 
   return (
     <>
-     <h2 className="head-text">
+     <h2 className="head-text" >
         What my 
         <span> Colleagues </span>
         say

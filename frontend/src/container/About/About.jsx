@@ -21,12 +21,14 @@ const About = () => {
         <span> About me</span>
       </h2>
       <p className="about__me">
-        I completed my bachelor's degree in computer science, and now I work as a
-        full-stack web developer, specializing in building websites for small
-        startups using JavaScript, React, Ruby on Rails, and Python. I have a
-        strong interest in new technology and develop cutting-edge services. I'm
-        now enrolled in Microverse, an online course that teaches software
-        development through pair programming and real-world projects.
+        Welcome to my portfolio! I'm a passionate full-stack web developer who
+        specializes in creating captivating websites for startups using
+        JavaScript, React, Ruby on Rails, and Python. With a Computer Science
+        degree and Microverse training, I combine technical expertise with a
+        keen interest in emerging technologies. My portfolio showcases projects
+        that embody innovation and problem-solving, reflecting my commitment to
+        excellence. Let's collaborate to bring your digital ideas to life and
+        shape the future of the web.
       </p>
 
       <div className="app__profile">

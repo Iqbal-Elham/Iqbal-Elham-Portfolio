@@ -45,6 +45,11 @@ const Footer = () => {
   return (
     <>
       <h2 className="head-text">Take a coffee & chat with me</h2>
+      <p className="about__me">
+        Whether you need a frontend developer, backend engineer, or graphic
+        designer, I'm ready to collaborate. Let's bring your digital ideas to
+        life and create memorable user-centric experiences together.
+      </p>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
@@ -140,8 +145,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__copyright">
-          <p className="p-text">@2023 Iqbal Elham</p>
-          <p className="p-text">All rights reserved</p>
+          <p className="p-text">2023 Iqbal Elham</p>
+          <p className="p-text">&copy; All rights reserved</p>
         </div>
       </div>
     </>

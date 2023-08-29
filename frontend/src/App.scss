@@ -99,10 +99,17 @@
   }
   
   .app__social {
+    // display: flex;
+    // justify-content: flex-end;
+    // align-items: center;
+    // flex-direction: column;
+
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     flex-direction: column;
+  justify-content: flex-end; /* Align to the right */
+  position: fixed; /* Fixed positioning */
+  left: 0; /* Align to the right side of the viewport */
+  bottom: 0; /* Center vertically */
   
     padding: 1rem;
   
@@ -150,10 +157,16 @@
   }
   
   .app__navigation {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+  justify-content: flex-end; /* Align to the right */
+  position: fixed; /* Fixed positioning */
+  right: 0; /* Align to the right side of the viewport */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
   
     padding: 1rem;
   
