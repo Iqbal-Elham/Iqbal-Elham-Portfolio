@@ -46,7 +46,7 @@ const Navbar = () => {
               initial={{ opacity: 0 }} // Initial opacity when entering
               animate={{ opacity: 1 }} // Animation when component is present
               exit={{ opacity: 0 }}    // Animation when component is removed
-              whileInView={{ x: [300, 0] }}
+              whileInView={{ x: [200, 0] }}
               transition={{ duration: 0.85, ease: "easeInOut" }}
             >
               <HiX onClick={() => setToggle(false)} />
