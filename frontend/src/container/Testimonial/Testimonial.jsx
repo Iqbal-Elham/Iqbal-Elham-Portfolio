@@ -51,7 +51,7 @@ const Testimonial = () => {
           <div className="app__testimonial-item app__flex">
             <img src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials[currentIndex].name} />
             <div className="app__testimonial-content">
-              <p className="p-text">{expanded ? testimonials[currentIndex].feedback : truncateText(testimonials[currentIndex].feedback, 300)}</p>
+              <p className="p-text">{expanded ? testimonials[currentIndex].feedback : truncateText(testimonials[currentIndex].feedback, 400)}</p>
               <button className="see-more-button" onClick={toggleExpanded}>
               {expanded ? 'See less' : 'See more'}
             </button>
