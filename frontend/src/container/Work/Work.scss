@@ -113,6 +113,11 @@
     border-radius: 0.5rem;
     opacity: 0;
     transition: all 0.3s ease;
+
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
+
     
     div {
         width: 50px;
@@ -129,7 +134,38 @@
         svg {
             width: 50%;
             height: 50%;
-            color: var(--white-color);
+            color: white;
+        }
+    }
+}
+
+.app__work-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+    display: none;
+
+    @media screen and (max-width: 1000px) {
+        display: block;
+    }
+
+
+    button {
+    background-color: var(--secondary-color);
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+        &:hover {
+        background-color: var(--secondary-color-hover);
         }
     }
 }
