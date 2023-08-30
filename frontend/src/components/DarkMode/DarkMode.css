@@ -22,7 +22,7 @@
     position: absolute;
     top: 3px;
     left: 3px;
-    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    background: linear-gradient(180deg, #f78a6f, #c52d28);
     border-radius: 180px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -64,5 +64,5 @@
     fill: #7e7e7e;
 }
 .dark_mode_input:checked + .dark_mode_label svg.moon {
-    fill: #fff;
+    fill: #ffffff;
 }
