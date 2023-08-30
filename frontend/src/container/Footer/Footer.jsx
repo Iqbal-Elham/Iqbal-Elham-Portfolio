@@ -6,6 +6,8 @@ import { client } from "../../client";
 import { BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import "./Footer.scss";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -53,13 +55,13 @@ const Footer = () => {
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
-          <img src={images.email} alt="email" />
+          <LazyLoadImage src={images.email} alt="email" />
           <a href="mailto:iqbal.elham7@gmail.com" className="p-text">
             iqbal.elham7@gmail.com
           </a>
         </div>
         <div className="app__footer-card">
-          <img src={images.mobile} alt="phone" />
+          <LazyLoadImage src={images.mobile} alt="phone" />
           <a href="tel:+93 (765) 181-256" className="p-text">
             +93 (765) 181-256
           </a>

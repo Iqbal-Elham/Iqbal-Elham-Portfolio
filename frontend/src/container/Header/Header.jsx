@@ -36,7 +36,7 @@ const Header = () => {
             <p className="p-text">Full Stack Web Developer</p>
             <p className="p-text">Freelancer</p>
           </div>
-          <a href={ resume } target="_blank" rel="noopener noreferrer" >
+          <a href={resume} target="_blank" rel="noopener noreferrer">
             <button className="app__resume">My Resume</button>
           </a>
         </div>
@@ -46,10 +46,8 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <LazyLoadImage src={images.profile} alt="profile background" className="profile-pic"/>
-        <motion.img
-          whileInView={{ scale: [0, 1] }}
-          transition={{ duratio: 1, ease: "easeInOut" }}
+        <LazyLoadImage src={images.profile} alt="profile background" className="profile-pic" />
+        <LazyLoadImage
           src={images.circle}
           alt="profile circle"
           className="overlay_circle"

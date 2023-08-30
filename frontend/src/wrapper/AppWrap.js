@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import SocialMedia from '../components/SocialMedia';
+import React from 'react';
+// import SocialMedia from '../components/SocialMedia';
 // import NavigationDots from '../components/NavigationDots';
 
 const AppWrap = (Component, idName, classNames) => function HOC() {
