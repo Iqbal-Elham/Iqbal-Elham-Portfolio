@@ -1,22 +1,23 @@
 import React from "react";
 import "./Header.scss";
 import { motion } from "framer-motion";
-import { images, resume } from "../../constants/index";
 import AppWrap from "../../wrapper/AppWrap";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-
-const scaleVariants = {
-  whileInView: {
-    scale: [0, 1],
-    opacity: [0, 1],
-    transition: {
-      duration: 1,
-      ease: "easeInOut",
-    },
-  },
-};
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css"; // Import the opacity effect CSS
+import { images, resume } from "../../constants/index";
 
 const Header = () => {
+  const scaleVariants = {
+    whileInView: {
+      scale: [0, 1],
+      opacity: [0, 1],
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
     <div className="app__header app__flex">
       <motion.div
@@ -46,14 +47,19 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        {/* <LazyLoadImage src={images.profile} alt="profile background" className="profile-pic" /> */}
-        <LazyLoadImage
+        <motion.img
+          whileInView={{ scale: [0, 1] }}
+          transition={{ duration: 1, ease: "easeInOut" }}
           src={images.circle}
           alt="profile circle"
           className="overlay_circle"
         />
+        <LazyLoadImage
+          src={images.profile}
+          alt="profile background"
+          className="profile-pic"
+        />
       </motion.div>
-
       <motion.div
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
