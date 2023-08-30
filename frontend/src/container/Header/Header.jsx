@@ -46,7 +46,7 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <LazyLoadImage src={images.profile} alt="profile background" className="profile-pic" />
+        {/* <LazyLoadImage src={images.profile} alt="profile background" className="profile-pic" /> */}
         <LazyLoadImage
           src={images.circle}
           alt="profile circle"
