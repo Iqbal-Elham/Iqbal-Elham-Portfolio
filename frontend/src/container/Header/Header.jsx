@@ -54,11 +54,11 @@ const Header = () => {
           alt="profile circle"
           className="overlay_circle"
         />
-        {/* <LazyLoadImage
+        <LazyLoadImage
           src={images.profile}
           alt="profile background"
           className="profile-pic"
-        /> */}
+        />
       </motion.div>
       <motion.div
         variants={scaleVariants}
