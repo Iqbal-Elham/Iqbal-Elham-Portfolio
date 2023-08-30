@@ -112,8 +112,8 @@ const Work = () => {
               </p>
 
               <div className="app__work-btn">
-                  <button>Demo</button>
-                  <button>Source</button>
+                  <a href={work.projectLink} target="_blank">Demo</a>
+                  <a href={work.codeLink} target="_blank">Source</a>
               </div>
 
               <div className="app__work-tag app__flex">
