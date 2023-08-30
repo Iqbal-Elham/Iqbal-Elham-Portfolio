@@ -4,6 +4,7 @@ import "./Navbar.scss";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import DarkMode from "../DarkMode/DarkMode";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -20,7 +21,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" className="logo-img" />
+        <LazyLoadImage src={images.logo} alt="logo" className="logo-img" />
         <div className="app__navbar-logo-name">
           <p className="app__navbar-logo-firstname">Iqbal</p>
           <p className="app__navbar-logo-lastname">Elham</p>

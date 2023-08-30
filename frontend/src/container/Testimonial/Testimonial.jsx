@@ -6,6 +6,7 @@ import AppWrap from '../../wrapper/AppWrap';
 import MotionWrap from '../../wrapper/MotionWrap';
 import { urlFor, client } from '../../client';
 import './Testimonial.scss';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,7 +50,7 @@ const Testimonial = () => {
       {testimonials.length && (
         <>
           <div className="app__testimonial-item app__flex">
-            <img src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials[currentIndex].name} />
+            <LazyLoadImage src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials[currentIndex].name} />
             <div className="app__testimonial-content">
               <p className="p-text">{expanded ? testimonials[currentIndex].feedback : truncateText(testimonials[currentIndex].feedback, 400)}</p>
               <button className="see-more-button" onClick={toggleExpanded}>
@@ -83,7 +84,7 @@ const Testimonial = () => {
             transition={{ duration: 0.5, type: 'tween' }}
             key={brand._id}
           >
-            <img src={urlFor(brand.imgUrl)} alt={brand.name} />
+            <LazyLoadImage src={urlFor(brand.imgUrl)} alt={brand.name} />
           </motion.div>
         ))}
       </div>

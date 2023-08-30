@@ -3,6 +3,7 @@ import "./Header.scss";
 import { motion } from "framer-motion";
 import { images, resume } from "../../constants/index";
 import AppWrap from "../../wrapper/AppWrap";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const scaleVariants = {
   whileInView: {
@@ -45,7 +46,7 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <img src={images.profile} alt="profile background" className="profile-pic"/>
+        <LazyLoadImage src={images.profile} alt="profile background" className="profile-pic"/>
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duratio: 1, ease: "easeInOut" }}
@@ -62,7 +63,7 @@ const Header = () => {
       >
         {[images.react, images.python, images.sass].map((circle, index) => (
           <div className="circle-cmp app__flex" key={`circle-${index}`}>
-            <img src={circle} alt="circle" />
+            <LazyLoadImage src={circle} alt="circle" />
           </div>
         ))}
       </motion.div>

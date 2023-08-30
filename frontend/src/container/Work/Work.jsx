@@ -5,6 +5,7 @@ import AppWrap from "../../wrapper/AppWrap";
 import MotionWrap from "../../wrapper/MotionWrap";
 import { urlFor, client } from "../../client";
 import "./Work.scss";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Work = () => {
   const [works, setWorks] = useState([]);
@@ -70,7 +71,7 @@ const Work = () => {
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
-              <img src={urlFor(work.imgUrl)} alt={work.name} />
+              <LazyLoadImage src={urlFor(work.imgUrl)} alt={work.name} />
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
