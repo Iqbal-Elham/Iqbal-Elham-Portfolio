@@ -3,13 +3,6 @@ import React from 'react';
 // import NavigationDots from '../components/NavigationDots';
 
 const AppWrap = (Component, idName, classNames) => function HOC() {
-    // const navItems = ["Home", "About", "Work", "Skills", "Testimonials", "Contact"];
-    // const activeIndex = navItems.indexOf(idName);
-    // const [activeDot, setActiveDot] = useState(0);
-
-    // const handleDotClick = (index) => {
-    //   setActiveDot(index);
-    // };
     return (
         <div id={idName} className={`app__container ${classNames}`}>
             {/* <SocialMedia /> */}

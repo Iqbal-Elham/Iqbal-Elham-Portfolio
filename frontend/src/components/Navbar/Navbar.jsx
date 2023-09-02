@@ -43,9 +43,9 @@ const Navbar = () => {
 
           {toggle && (
             <motion.div
-              initial={{ opacity: 0 }} // Initial opacity when entering
-              animate={{ opacity: 1 }} // Animation when component is present
-              exit={{ opacity: 0 }}    // Animation when component is removed
+              initial={{ opacity: 0 }} 
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}    
               whileInView={{ x: [200, 0] }}
               transition={{ duration: 0.85, ease: "easeInOut" }}
             >
