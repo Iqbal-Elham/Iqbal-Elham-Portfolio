@@ -114,6 +114,7 @@ const Footer = () => {
               href="https://github.com/Iqbal-Elham"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="github"
             >
               <BsGithub />
             </a>
@@ -123,6 +124,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/iqbal-elham/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="linkedin"
             >
               <BsLinkedin />
             </a>
@@ -132,6 +134,7 @@ const Footer = () => {
               href="https://www.facebook.com/iqbal.elh/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="facebook"
             >
               <FaFacebookF />
             </a>
@@ -141,6 +144,7 @@ const Footer = () => {
               href="https://www.instagram.com/iqbal_elham/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="instagram"
             >
               <BsInstagram />
             </a>
