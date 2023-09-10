@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" className="logo-img" />
+        <img src={images.logo} alt="logo" className="logo-img" width="339" height="375" />
         <div className="app__navbar-logo-name">
           <p className="app__navbar-logo-firstname">Iqbal</p>
           <p className="app__navbar-logo-lastname">Elham</p>
