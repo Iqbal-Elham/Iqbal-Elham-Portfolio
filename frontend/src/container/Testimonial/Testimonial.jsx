@@ -58,9 +58,9 @@ const Testimonial = () => {
             </button>
               <div>
                 <a href={testimonials[currentIndex].link} target="_blank" rel="noopener noreferrer" >
-                  <h5 className="bold-text">{testimonials[currentIndex].name} <BsBoxArrowUpRight /></h5>
+                  <h3 className="bold-text">{testimonials[currentIndex].name} <BsBoxArrowUpRight /></h3>
                   </a>
-                <p className="p-text h5-title">{testimonials[currentIndex].company}</p>
+                <p className="p-text h3-title">{testimonials[currentIndex].company}</p>
               </div>
             </div>
           </div>
