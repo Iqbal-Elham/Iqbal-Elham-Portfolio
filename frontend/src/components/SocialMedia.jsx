@@ -6,16 +6,16 @@ const SocialMedia = () => {
     return (
         <div className='app__social'>
             <div>
-                <a href="https://github.com/Iqbal-Elham" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
+                <a href="https://github.com/Iqbal-Elham" target="_blank" rel="noopener noreferrer" aria-label="github"><BsGithub /></a>
             </div>
             <div>
-                <a href="https://www.linkedin.com/in/iqbal-elham/" target="_blank" rel="noopener noreferrer"><BsLinkedin /></a>
+                <a href="https://www.linkedin.com/in/iqbal-elham/" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><BsLinkedin /></a>
             </div>
             <div>
-                <a href="https://www.facebook.com/iqbal.elh/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+                <a href="https://www.facebook.com/iqbal.elh/" target="_blank" rel="noopener noreferrer" aria-label="facebook"><FaFacebookF /></a>
             </div>
             <div>
-                <a href="https://www.instagram.com/iqbal_elham/" target="_blank" rel="noopener noreferrer"><BsInstagram /></a>
+                <a href="https://www.instagram.com/iqbal_elham/" target="_blank" rel="noopener noreferrer" aria-label="instagram"><BsInstagram /></a>
             </div>
         </div>
     );
