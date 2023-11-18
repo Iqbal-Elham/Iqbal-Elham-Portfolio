@@ -48,7 +48,7 @@ const Footer = () => {
     <>
       <h2 className="head-text">Take a coffee & chat with me</h2>
       <p className="about__me">
-        Whether you need a frontend developer, backend engineer, or graphic
+        Whether you need a front-end developer, back-end developer, or graphic
         designer, I'm ready to collaborate. Let's bring your digital ideas to
         life and create memorable user-centric experiences together.
       </p>
