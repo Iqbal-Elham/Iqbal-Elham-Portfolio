@@ -8,13 +8,13 @@ import { FaFacebookF } from "react-icons/fa";
 import "./Footer.scss";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-
 const Footer = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    username: "",
     email: "",
     message: "",
   });
+  const [errors, setErrors] = useState({});
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -23,9 +23,23 @@ const Footer = () => {
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+    setErrors({ ...errors, [name]: "" });
+  };
+
+  const validateForm = () => {
+    let newErrors = {};
+    if (!formData.username.trim()) {
+      newErrors.username = "Name is required!";
+    }
+    if (!formData.message.trim()) {
+      newErrors.message = "Message cannot be empty!";
+    }
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = () => {
+    if (!validateForm()) return;
     setLoading(true);
 
     const contact = {
@@ -69,7 +83,7 @@ const Footer = () => {
       </div>
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
-          <div className="app__flex">
+          <div className="app__flex input-container">
             <input
               className="p-text"
               type="text"
@@ -77,10 +91,10 @@ const Footer = () => {
               name="username"
               value={username}
               onChange={handleChangeInput}
-              required
             />
+            {errors.username && <span className="error-message">{errors.username}</span>}
           </div>
-          <div className="app__flex">
+          <div className="app__flex input-container">
             <input
               className="p-text"
               type="email"
@@ -90,15 +104,15 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          <div>
+          <div className="input-container">
             <textarea
               className="p-text"
               placeholder="Your Message"
               value={message}
               name="message"
               onChange={handleChangeInput}
-              required
             />
+            {errors.message && <span className="error-message">{errors.message}</span>}
           </div>
           <button type="button" className="p-text" onClick={handleSubmit}>
             {!loading ? "Send Message" : "Sending..."}
