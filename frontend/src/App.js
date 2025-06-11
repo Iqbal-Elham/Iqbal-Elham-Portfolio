@@ -8,7 +8,6 @@ import Testimonial from "./container/Testimonial/Testimonial";
 import Work from "./container/Work/Work";
 import Navbar from "./components/Navbar/Navbar";
 import SocialMedia from "./components/SocialMedia";
-import SecondHeader from "./container/Header/SecondHeader";
 
 function App() {
   if ("serviceWorker" in navigator) {
@@ -29,8 +28,7 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <SecondHeader />
-      {/* <Header /> */}
+      <Header />
       <About />
       <Work />
       <Skills />
