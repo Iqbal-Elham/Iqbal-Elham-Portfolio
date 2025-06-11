@@ -157,7 +157,7 @@ const Header = () => {
           className="app__header-info md:pt-16"
         >
           <div className="app__header-badge">
-            <div className="badge-cmp app__flex !px-3 md:!px-6">
+            <div className="badge-cmp app__flex !px-3 md:!px-6 !py-1">
               <span>👋</span>
               <div style={{ marginLeft: 20 }}>
                 <TypingGreeting />
@@ -169,12 +169,12 @@ const Header = () => {
               <p className="head-text !text-xl md:!text-2xl">Full Stack <span className="!text-xl md:!text-3xl">Web Developer</span></p>
             </div>
             <div className="md:py-8 py-2 tag-cmp !px-3 md:!px-6">
-              <div className="!text-xl md:!text-2xl head-text !font-light">Transforming ideas into scalable, elegant web applications that elevate startups and delight users worldwide.</div>
+              <div className="!text-lg md:!text-xl head-text !font-light">Transforming ideas into scalable, elegant web applications that elevate startups and delight users worldwide.</div>
             </div>
             {/* <a href={resume} target="_blank" rel="noopener noreferrer">
                 <button className="app__resume">My Resume</button>
               </a> */}
-            <div className="flex gap-x-2 my-6 md:my-3">
+            <div className="flex gap-x-2 mt-6">
               <svg width="0" height="0" style={{ position: 'absolute' }}>
                 <defs>
                   <clipPath id="squircleClip" clipPathUnits="objectBoundingBox">
@@ -261,7 +261,7 @@ const Header = () => {
         </motion.div>
 
 
-        <div className="relative w-[24rem] h-[60vh] md:w-[28rem] md:h-[60vh] group cursor-pointer">
+        <div className="relative w-[22rem] h-[80vh] md:w-[28rem] md:h-[60vh] group cursor-pointer md:mt-0 mt-6">
           <div
             className="absolute inset-0 bg-[#c52d28]"
             style={{
@@ -271,14 +271,20 @@ const Header = () => {
             <LazyLoadImage
               src={images.profile}
               alt="profile background"
+              width={448}
+              height={480}
               className="
-        absolute inset-0 w-full h-full
-          object-cover origin-center
-          transition-all duration-300 ease-out
-          grayscale
-          hover:grayscale-0
-          group-hover:scale-110
-          "
+                absolute inset-0 w-full h-full
+                object-cover origin-center
+                transition-all duration-300 ease-out
+                grayscale
+                hover:grayscale-0
+                group-hover:scale-110
+              "
+              effect="opacity"
+              placeholderSrc={images.profile}
+              loading="eager"
+              decoding="async"
             />
           </div>
         </div>
